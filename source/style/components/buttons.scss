@@ -1,0 +1,43 @@
+
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: $btnFontSize;
+  border: 1px solid $buttonInitialColor;
+  padding: 12px 25px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  background: $buttonInitialColor;
+  transition: $transitionTime ease-out background, $transitionTime ease-out border-color;
+  outline: none !important;
+}
+
+.btn--transparent {
+  background: transparent;
+  border-color:#fff;
+}
+
+.btn--flex {
+  flex: 1 1 auto;
+}
+
+.btn--fw {
+  width: 100%;
+}
+
+.btn--transparent-full {
+  border-color: transparent;
+  background: transparent;
+
+}
+
+@media(min-width: $mobileDimension) {
+  .btn:hover {
+    background: $buttonHoverColor;
+    border-color: $buttonHoverColor;
+    color: #fff;
+  }
+}

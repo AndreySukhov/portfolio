@@ -1,0 +1,53 @@
+.skill-pie {
+position: relative;
+}
+
+.skill-pie__graphic {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  border-radius: 50%;
+  background: #dfdcd5;
+  background-image: linear-gradient(to right, transparent 50%, #655 0);
+}
+
+.skill-pie__graphic::before {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background: #655;
+  transform-origin: left;
+  transform: rotate(.1turn);
+}
+
+
+.skills-list-row {
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+  .skill-pie:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.skill-pie {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+}
+
+.skill-pie__text {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  height: 120px;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  color: #243994;
+  font-size: 0.87rem;
+  text-align: center;
+}

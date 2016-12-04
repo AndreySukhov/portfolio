@@ -1,0 +1,4 @@
+div.socaials-ctn
+    each className,href in socials
+        a(class='social__item' href=`${href}`)
+            i(class='fa fa-'+`${className}` aria-hidden='true')

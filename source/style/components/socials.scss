@@ -1,0 +1,39 @@
+.socaials-ctn {
+  font-size: 0;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.greeting-block .social__item {
+  font-size: 28px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: $socialBlue;
+  transition: opacity ease-out $transitionTime , color ease-out $transitionTime;
+}
+
+.burger-trigger {
+  color: #fff;
+  font-size: 40px;
+  transition: color ease-out $transitionTime;
+}
+
+@media (min-width: $mobileDimension) {
+  .greeting-block .social__item:hover {
+    opacity: 0.8;
+  }
+
+  .social__item:hover {
+    color: $socialBlue;
+  }
+
+  .burger-trigger:hover {
+    color: $socialBlue;
+  }
+}

@@ -1,0 +1,31 @@
+//переменные
+@import "variables";
+
+//базовые элементы
+@import 'base';
+
+
+//сетка
+@import "layout";
+
+//типографика
+@import "typography";
+
+//компоненты
+@import "components/buttons";
+@import "components/rounded-photo";
+@import "components/socials";
+@import "components/header";
+@import "components/footer";
+@import "components/donut";
+@import "components/map";
+@import "components/side-nav";
+@import "components/reviews";
+@import "components/contacts-form";
+
+
+//специфические вещи для страниц
+@import 'pages/greeting';
+@import "pages/about";
+@import "pages/blog";
+@import "pages/works";

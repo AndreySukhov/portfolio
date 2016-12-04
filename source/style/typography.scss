@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'sansus_webissimoregular';
+  src: url('../fonts/sansus-webissimo-regular-webfont.eot');
+  src: url('../fonts/sansus-webissimo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/sansus-webissimo-regular-webfont.woff2') format('woff2'),
+  url('../fonts/sansus-webissimo-regular-webfont.woff') format('woff'),
+  url('../fonts/sansus-webissimo-regular-webfont.ttf') format('truetype'),
+  url('../fonts/sansus-webissimo-regular-webfont.svg#sansus_webissimoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@mixin title-defaults() {
+  font-family: $sansusFont;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 400;
+  color: $titleColor;
+  margin-bottom: 15px;
+}
+
+
+.title {
+  @include title-defaults();
+  font-size: $largeTitleFontSize;
+}
+
+.title--white {
+  color: #fff;
+}
+
+.title--second-level {
+ font-size: $secondLevelTitleFontSize;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: $fontWhiteColor;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.21;
+}
+
+.subtitle-dark {
+  color: $titleColor;
+}
+
+.text-regular, .text-block p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+.text-block--blog-modify {
+  color: #455a64;
+}
+
+.text-regular--no-margin {
+  margin-bottom: 0;
+}
+
+.text-regular--white {
+  color: $fontWhiteColor;
+}
+
+
+.title--padded {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.date {
+  color: $mainBlue;
+  display: inline-block;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}

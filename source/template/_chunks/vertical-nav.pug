@@ -1,0 +1,7 @@
+div.side-nav-list
+    each content in blogList
+        each item in content
+            if item.active
+                a.side-nav-list__item.side-nav-list__item--active(href="#", data-target="blog-item-" +`${item['link']}`) #{item['title']}
+            else
+                a.side-nav-list__item(href="#", data-target="blog-item-" +`${item['link']}`) #{item['title']}

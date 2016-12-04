@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  min-height: 100%;
+  font-family: $mainFont;
+  position: relative;
+  background: $beige;
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main-content {
+  min-height: calc(100vh - 50px);
+  position: relative;
+}
+
+
+.centered {
+  text-align: center;
+}
+
+.line-separate {
+  background: $titleColor;
+  opacity: 0.5;
+  width: 90px;
+  height: 3px;
+  margin: 0 auto 25px auto;
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: block;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+
+a {
+  transition: color $transitionTime 0.15s;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex-center-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+@media (min-width: $mobileDimension) {
+  a:hover {
+    color:$buttonHoverColor;
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "socials": {
+    "https://vk.com/sushkasush": "vk",
+    "https://github.com/AndreySukhov": "github-alt",
+    "#": "linkedin"
+  },
+  "navigation": {
+    "Мои работы": "/works.html",
+    "Обо мне": "/about.html",
+    "Блог": "/blog.html"
+  },
+  "footerNavigation": {
+    "Мои работы": "/works.html",
+    "Обо мне": "about.html",
+    "Блог": "/blog.html",
+    "Авторизация": "#"
+  },
+  "skillList": {
+    "Frontend": [
+      {
+        "90": "HTML5"
+      },
+      {
+        "80": "CSS3"
+      },
+      {
+        "70": "Javascript & Jquery"
+      }
+    ],
+    "Backend": [
+      {
+        "20": "php"
+      },
+      {
+        "20": "mySql"
+      },
+      {
+        "30": "Node.js & npm"
+      },
+      {
+        "15": "Mongo.db"
+      }
+    ],
+    "Workflow": [
+      {
+        "50": "Git"
+      },
+      {
+        "60": "Gulp"
+      },
+      {
+        "80": "Bower"
+      }
+    ]
+  },
+  "contactsList": {
+    "skype": [
+      {
+        "link": "skype:susha199020",
+        "icon": "skype",
+        "text": "susha199020"
+      }
+    ],
+    "phone": [
+      {
+        "link": "tel:+79264946100",
+        "icon": "phone",
+        "text": "+7(926) 494 61 00"
+      }
+    ],
+    "mail": [
+      {
+        "link": "mailto:andrey.sush.1990@mail.ru",
+        "icon": "envelope",
+        "text": "andrey.sush.1990@mail.ru"
+      }
+    ],
+    "address": [
+      {
+        "icon": "map-marker",
+        "text": "Город Москва, Улица Кашенкин луг, Д. 8, к.3"
+      }
+    ]
+  },
+  "blogList": {
+    "item1": [
+      {
+        "title": "Самое важное в SASS",
+        "id": 1,
+        "active": true
+      }
+    ],
+    "item2": [
+      {
+        "title": "Приемы в верстке, без которых не обходится ни один сайт",
+        "id": "2"
+      }
+    ],
+    "item3": [
+      {
+        "title": "Самый необходимые набор Gulp плагинов",
+        "id": "3"
+      }
+    ],
+    "item4": [
+      {
+        "title": "Почему я выбрал Jade",
+        "id": 4
+      }
+    ]
+  }
+}

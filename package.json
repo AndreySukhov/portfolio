@@ -26,6 +26,8 @@
     "rimraf": "2.5.2"
   },
   "dependencies": {
-    "normalize.css": "^4.1.1"
+    "drawdoughnutchart": "^0.4.2",
+    "normalize.css": "^4.1.1",
+    "peity": "^3.2.1"
   }
 }

@@ -1,0 +1,10 @@
+div.skills-list
+    each content, skillTitle in skillList
+        div.skills-list__item
+        h2.subtitle.subtitle-dark #{skillTitle}
+        div.skills-list-row
+            each item in content
+                each title, percent in item
+                    div.skill-pie
+                        div.skill-pie__graphic.js-skill-pie__graphic(data-peity='{ "fill": ["#165ad1", "#dfdcd5"],   "innerRadius": 40, "radius": 60 }') #{percent}/100
+                        div.skill-pie__text #{title}

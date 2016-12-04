@@ -1,0 +1,78 @@
+.contacts-form-ctn {
+  margin: 55px auto 0 auto;
+  width: 380px;
+  box-sizing: border-box;
+  padding: 40px 20px 0 20px;
+  background: rgba(#fff, 0.1);
+  position: relative;
+}
+
+.input-item {
+  margin-bottom: 20px;
+}
+
+.input, .textarea {
+  width: 100%;
+  outline: none !important;
+  border: 1px solid transparent;
+  padding: 15px;
+  color: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: rgba(#fff, 0.2);
+  transition: border-color ease-out $transitionTime;
+}
+
+.textarea {
+  resize: none;
+  height: 125px;
+}
+
+.input:focus, .textarea:focus {
+  border-color: #fff;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+::-moz-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+:-moz-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.form-actions {
+  display: flex;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.form-actions__item {
+  flex: 1 1 50%;
+}
+
+.contacts-arrow {
+  position: absolute;
+  color: #fff;
+  font-size: 26px;
+  left: 50%;
+  margin-left: -23px;
+  bottom: -75px;
+  padding: 10px;
+  transition: transform ease-out $transitionTime;
+}
+
+@media (min-width: $mobileDimension) {
+
+  .contacts-arrow:hover {
+    transform: translateY(-2px);
+  }
+}

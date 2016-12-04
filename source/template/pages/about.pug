@@ -1,0 +1,60 @@
+extends ../_layouts/layout.pug
+
+block variables
+    - var headerTitleText = 'Сухов Андрей'
+    - var headerSubtitleText = 'Личный сайт веб разработчика'
+    - var title = 'Обо мне'
+    - var footerClass = 'transparent'
+
+block content
+    div.skew-ctn
+        div.skew-block.skew-block--left.skew-block--left-beige
+        div.skew-block.skew-block--right.skew-block--right-creme
+    div.half-block-ctn
+        div.main-content__half-block.main-content__half-block--beige
+            div.content-half-block-fixer.content-half-block-fixer--left
+                div.block-half-flex-ctn.block-half-flex-ctn--large-screen
+                    div.block-half-column.block-half-column--350--large-screen.centered
+                        h1.title.title--padded Обо мне
+                    div.block-half-column.block-half-column
+                        div.photo-simple-ctn.centered
+                            img.photo(src='/assets/img/profile.jpg')
+                        div.centered
+                            h2.title.title--second-level Кто я
+                            div.line-separate
+                        div.text-block
+                            p.text-regular.
+                                Я веб разработчик из Москвы. Мне 25 лет. Я занимаюсь разработкой современных сайтов
+                                и приложений. Мне нравится делать интересные и современные проекты.
+                            p.text-regular.
+                                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже
+                                 я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+        div.main-content__half-block.main-content__half-block--creme
+            div.content-half-block-fixer.content-half-block-fixer--right
+                div.centered
+                    h2.title.title--second-level Чем я могу быть <br> вам полезен
+                    div.line-separate
+                div.text-block
+                    p.text-regular.
+                        Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                include ../_chunks/skills
+    div.map-block
+        div.map-contacts
+            div.centered
+                h2.title.title--second-level Кто я
+                div.line-separate
+            div.map-contacts-list
+                each content in contactsList
+                    each item in content
+                        if item['link']
+                            a.map-contacts-list__item(href=`${item['link']}`)
+                                div.map-contacts-list-item__icon
+                                    i(class="fa fa-"+`${item['icon']}`)
+                                span.map-contacts-list-item__text #{item['text']}
+                        else
+                            span.map-contacts-list__item
+                                div.map-contacts-list-item__icon
+                                    i(class="fa fa-" +`${item['icon']}`)
+                                span.map-contacts-list-item__text #{item['text']}
+
+        div(class="map",id="js-map")

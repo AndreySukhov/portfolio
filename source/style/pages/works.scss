@@ -1,0 +1,91 @@
+.works-page  {
+
+  .header-page-arrow {
+    bottom: 200px;
+  }
+
+  .main-header {
+    min-height: 780px;
+  }
+}
+
+.work-example-description {
+  width: 400px;
+}
+
+.work-example-description__used-skills {
+  font-weight: 500;
+  color: $mainBlue;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+
+.current-work-holder {
+ padding: 60px 20px;
+}
+
+.current-work {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.works-toggle-ctn {
+  display: flex;
+}
+
+.works-toggle-ctn-item {
+  position: relative;
+  width: 50%;
+}
+
+.work-toggle-btn {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition: opacity ease-out $transitionTime;
+
+}
+
+.work-toggle-btn--prev {
+  background: rgba(#aaabb7, 0.7);
+}
+
+.work-img-holder {
+  padding: 2px 60px;
+}
+
+.work-toggle-btn--next {
+  background: rgba(#7e7f8a, 0.7);
+}
+
+.work-arrow-ctn {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 37px;
+  transition: transform ease-out $transitionTime;
+  margin-top: -21px;
+  margin-left: -19px;
+}
+
+.reviews-block-ctn {
+  background: url('../img/reviews-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: $mobileDimension) {
+  .works-toggle-ctn-item:hover {
+    .work-toggle-btn {
+     opacity: 0.7;
+    }
+
+    .work-arrow-ctn {
+      transform: translateY(-10px);
+    }
+
+  }
+}

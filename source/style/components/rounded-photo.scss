@@ -1,0 +1,15 @@
+.rounded-photo {
+  display: inline-block;
+  border: 0 solid transparent;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  margin-bottom: 15px;
+}
+
+.rounded-photo__img {
+  max-width: 100%;
+}

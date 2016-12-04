@@ -1,0 +1,22 @@
+.side-nav-list {
+  text-align: right;
+}
+
+.side-nav-list__item {
+  display: block;
+  color:#474b57;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 15px 15px 15px 0;
+  text-decoration: none;
+  border-right: 3px solid transparent;
+  margin-bottom: 5px;
+  transition: color ease-out $transitionTime, border-color ease-out $transitionTime;
+}
+
+.side-nav-list__item--active {
+  border-right-color: $mainBlue;
+  color: $mainBlue;
+}
+
+

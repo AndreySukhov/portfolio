@@ -1,0 +1,44 @@
+.blog-content {
+  position: relative;
+  padding-top: 50px;
+
+  .blog-content__item:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+
+
+.blog-side-content {
+  width: 260px;
+  margin-right: 90px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.blog-main-content {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 370px);
+}
+
+.blog-content__item {
+  padding-bottom: 65px;
+  margin-bottom: 65px;
+  border-bottom: 5px solid $creme;
+}
+
+
+@media (min-width: $largeScreenDimension) {
+  .blog-main-content {
+    width: 880px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .blog-side-content {
+    position: absolute;
+    left: 0;
+  }
+}

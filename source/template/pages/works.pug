@@ -1,0 +1,76 @@
+extends ../_layouts/layout.pug
+
+block variables
+    - var headerTitleText = 'Сухов Андрей'
+    - var headerSubtitleText = 'Личный сайт веб разработчика'
+    - var title = 'Мои работы'
+    - var footerClass = 'transparent'
+    - var customClass = 'works-page'
+
+block content
+    div.skew-ctn.skew-ctn--high
+        div.skew-block.skew-block--left.skew-block--left-dark-transparent
+        div.skew-block.skew-block--right.skew-block--right-dark-transparent
+        h1.title.title--skew.title--white Мои работы
+    div.half-block-ctn
+        div.main-content__half-block.main-content__half-block--beige
+            div.flex-center-block
+                div.work-example-description.centered
+                    h2.title.title--second-level Интернет-магазин деликатесов
+                    div.line-separate
+                    div.work-example-description__used-skills HTML , CSS, JAVASCRIPT
+                    a.btn(href="http://delikateska.ru/", target="_blank") <i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт
+        div.main-content__half-block.main-content__half-block--creme
+            div.current-work-holder
+                div.current-work
+                    img(src="/assets/img/work-img.png")
+            div.works-toggle-ctn
+                div.works-toggle-ctn-item
+                    a.work-toggle-btn.work-toggle-btn--prev(href="#")
+                    div.work-img-holder
+                        img.work-img(src="/assets/img/work-img-2.png")
+                    div.work-arrow-ctn
+                        i.fa.fa-chevron-down(aria-hidden="true")
+                div.works-toggle-ctn-item
+                    a.work-toggle-btn.work-toggle-btn--next(href="#")
+                    div.work-img-holder
+                        img.work-img(src="/assets/img/work-img-3.png")
+                    div.work-arrow-ctn
+                        i.fa.fa-chevron-up(aria-hidden="true")
+    div.full-block-ctn.reviews-block-ctn
+        div.site-fixer
+            div.reviews-block.centered
+                h1.title.title--white Что обо мне <br> говорят
+                div.reviews-list
+                    div.reviews-list-item
+                        div.reviews-list-item__img-ctn
+                            img.reviews-list-item__img(src='/assets/img/review-img.jpg')
+                        div.reviews-list-item__text Этот парень проходил обучение веб-разработке не где-то, а в
+                            | LoftSchool! 2 месяца только самых тяжелых испытаний
+                            | и бессонных ночей!
+                        div.reviews-list-item__author Ковальчук Дмитрий
+                        div.reviews-list-item__status — основатель Loftschool
+                    div.reviews-list-item
+                        div.reviews-list-item__img-ctn
+                            img.reviews-list-item__img(src='/assets/img/review-img-1.jpg')
+                        div.reviews-list-item__text Этот код выдержет любые испытания. Только пожалуйста, не
+                            | загружается сайт на слишком старых браузерах!
+                        div.reviews-list-item__author Зар Захаров
+                        div.reviews-list-item__status — преподаватель
+                div.contacts-form-ctn
+                    h2.title.title--second-level.title--white Связаться со мной
+                    div.line-separate
+                    form.contacts-form
+                        div.input-item
+                            input(type="text", class="input", placeholder="Ваше Имя")
+                        div.input-item
+                            input(type="email", class="input", placeholder="Ваш email")
+                        div.input-item
+                            textarea(class="textarea", placeholder="Ваше сообщение")
+                        div.form-actions
+                            div.form-actions__item
+                                input(type="submit", value="Отправить", class="btn btn--fw")
+                            div.form-actions__item
+                                input(type="reset", value="Очистить", class="btn btn--fw btn--transparent-full")
+                    a.contacts-arrow(href="#")
+                        i.fa.fa-chevron-up(aria-hidden="true")

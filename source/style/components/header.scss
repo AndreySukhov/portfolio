@@ -1,0 +1,41 @@
+.main-header {
+  text-align: center;
+  background: url('/assets/img/main-bg.png') no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+}
+
+.main-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.burger-ctn {
+  color: #fff;
+}
+
+.header-page-arrow {
+  position: absolute;
+  font-size: 20px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.7;
+  transition: color ease-out $transitionTime , opacity ease-out $transitionTime, transform ease-out $transitionTime;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -20px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+@media (min-height:$mobileDimension ) {
+  .header-page-arrow:hover {
+    opacity: 1;
+    color: $buttonHoverColor;
+    transform: translateY(-2px);
+  }
+}
