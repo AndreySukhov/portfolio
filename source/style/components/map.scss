@@ -61,6 +61,40 @@
   width: calc(100% - 50px);
   font-size: 1rem;
   transition: color $transitionTime ease-out;
+}
+
+
+@media (max-width: $tabletDimension) {
+  .map-contacts {
+    width: 350px;
+    margin-top: -140px;
+    margin-left: -175px;
+  }
+
+  .map-contacts-list__item {
+    width: 100%;
+   margin-right: 0;
+  }
+}
+
+@media (max-width: $mobileDimension) {
+  .map {
+    height: 500px;
+    padding-bottom: 270px;
+  }
+
+  .map-contacts {
+    position: static;
+    margin-left: 0;
+    margin-top: 0;
+    width: auto;
+    padding: 30px 10px;
+
+  }
+
+  .map-block {
+    height: auto;
+  }
 
 }
 

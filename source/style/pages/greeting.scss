@@ -46,3 +46,36 @@
 .greeting-copyright {
   text-align: center;
 }
+
+@media (max-width: 900px) {
+  .greeting-block {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}
+
+
+@media (max-width: $mobileDimension) {
+  .greeting-authorise-ctn {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+  .greeting-block {
+    margin-top: 30px;
+  }
+
+  .greeting-block__content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .greeting-block {
+    width: auto;
+    max-width: 380px;
+  }
+}

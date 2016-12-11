@@ -5,7 +5,17 @@
   padding: 40px 20px 0 20px;
   background: rgba(#fff, 0.1);
   position: relative;
+  transition: box-shadow $transitionTime ease-out, background $transitionTime ease-out;
 }
+
+
+
+
+.form-ctn-focused {
+  box-shadow: 0 0 20px 20px rgba(#fff, 0.2);
+  background: rgba(#fff, 0.2);
+}
+
 
 .input-item {
   margin-bottom: 20px;
@@ -70,9 +80,22 @@
   transition: transform ease-out $transitionTime;
 }
 
+@media (max-width: $mobileDimension) {
+  .contacts-arrow {
+    bottom: -100px;
+  }
+}
+
 @media (min-width: $mobileDimension) {
 
   .contacts-arrow:hover {
     transform: translateY(-2px);
+  }
+}
+
+
+@media (max-width: 450px) {
+  .contacts-form-ctn {
+    width: auto;
   }
 }

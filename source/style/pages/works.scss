@@ -77,6 +77,49 @@
   background-size: cover;
 }
 
+
+.works-modify-block {
+  position: relative;
+}
+
+
+@media (max-width: $tabletDimension) {
+
+  .works-modify-block {
+    padding-bottom: 200px;
+  }
+
+
+  .work-img {
+    max-height: 180px;
+  }
+
+  .work-example-description {
+    margin-top: 35px;
+    margin-bottom: 55px;
+    max-width: 500px;
+    width: auto;
+  }
+
+  .works-toggle-ctn {
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .work-example-description__used-skills {
+    font-size: 0.87rem;
+    margin-bottom: 20px;
+  }
+
+  .work-example-description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: $mobileDimension) {
   .works-toggle-ctn-item:hover {
     .work-toggle-btn {

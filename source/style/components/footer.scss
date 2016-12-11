@@ -6,6 +6,7 @@
 
 .footer-top-flex {
   display: flex;
+  flex-flow: row wrap;
 
   .footer-top-block:first-of-type {
     padding-left: 0;
@@ -20,6 +21,7 @@
   flex: 1 1 33.333%;
   padding: 0 30px;
   border-right: 1px solid #64656c;
+  box-sizing: border-box;
 }
 
 .footer-text, .footer-link {
@@ -94,9 +96,70 @@
   }
 }
 
+@media (max-width: $tabletDimension) {
+
+  .footer-top-block {
+    border-right: none;
+    flex-basis: 50%;
+    padding: 15px 0 0 0;
+  }
+
+  .footer-top-block--tablet-fw {
+    flex-basis: 100%;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #64656c;
+    text-align: center;
+  }
+
+  .footer-top-block--tablet-right {
+    text-align: right;
+  }
+
+  .footer-top {
+    padding: 15px 0;
+  }
+
+  .footer-top-flex {
+    display: block;
+
+    .footer-top-block:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  .footer-top-block {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #64656c;
+    padding-bottom: 15px;
+  }
+
+  .footer-text, .footer-link {
+    font-size: 0.87rem;
+  }
+
+  .footer-nav {
+    margin: 0 -5px 15px -5px;
+
+
+  }
+
+  .footer-nav__item {
+    margin: 0 5px 5px 5px;
+    font-size: 0.87rem;
+  }
+
+  .mobile-block {
+    display: block;
+  }
+
+}
+
 
 @media (min-width: $mobileDimension) {
   .footer-top-block .social__item:hover {
     color: $socialBlue;
   }
+
+
 }

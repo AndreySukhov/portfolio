@@ -1,41 +1,18 @@
 .skill-pie {
-position: relative;
-}
-
-.skill-pie__graphic {
-  width: 120px;
-  height: 120px;
   position: relative;
-  border-radius: 50%;
-  background: #dfdcd5;
-  background-image: linear-gradient(to right, transparent 50%, #655 0);
-}
-
-.skill-pie__graphic::before {
-  content: '';
-  display: block;
-  margin-left: 50%;
-  height: 100%;
-  border-radius: 0 100% 100% 0 / 50%;
-  background: #655;
-  transform-origin: left;
-  transform: rotate(.1turn);
+  margin-bottom: 30px;
 }
 
 
 .skills-list-row {
-  margin-top: 10px;
-  margin-bottom: 40px;
-
-  .skill-pie:last-of-type {
-    margin-right: 0;
-  }
+  margin: 10px -20px;
 }
 
 .skill-pie {
   display: inline-block;
   vertical-align: top;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .skill-pie__text {
@@ -50,4 +27,25 @@ position: relative;
   color: #243994;
   font-size: 0.87rem;
   text-align: center;
+}
+
+@media(max-width: 1200px) {
+
+
+  .skills-list-row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .skill-pie {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+
+@media(max-width: $tabletDimension) {
+  .skills-list {
+    text-align: center;
+  }
 }

@@ -61,10 +61,15 @@ img {
   height: 100%;
 }
 
-
+@media (max-width: $mobileDimension) {
+  .mobile-hidden {
+    display: none;
+  }
+}
 
 @media (min-width: $mobileDimension) {
   a:hover {
     color:$buttonHoverColor;
   }
 }
+

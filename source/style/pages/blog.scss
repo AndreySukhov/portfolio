@@ -29,6 +29,24 @@
   border-bottom: 5px solid $creme;
 }
 
+@media (max-width: $tabletDimension) {
+  .blog-side-content {
+    display: none;
+  }
+
+
+  .blog-main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobileDimension) {
+  .blog-content__item {
+   padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+}
+
 
 @media (min-width: $largeScreenDimension) {
   .blog-main-content {

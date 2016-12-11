@@ -2,7 +2,7 @@ footer(class="main-footer main-footer--"+`${footerClass}`)
     div.footer-top
         div.site-fixer
             div.footer-top-flex
-                div.footer-top-block
+                div.footer-top-block.footer-top-block--tablet-fw
                     div.footer-text-ctn
                         p.footer-text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
                 div.footer-top-block
@@ -11,7 +11,7 @@ footer(class="main-footer main-footer--"+`${footerClass}`)
                             a.footer-nav__item(href=`${link}`)=title
                     div.footer-socials
                     include ../_partials/socials.pug
-                div.footer-top-block
+                div.footer-top-block.footer-top-block--tablet-right
                     div.footer-text-ctn
                         each content in contactsList
                             each item in content
@@ -23,4 +23,4 @@ footer(class="main-footer main-footer--"+`${footerClass}`)
                                         span.footer-text #{item['text']}
     div.footer-copyright
         div.site-fixer
-        div.footer-copyright-content © Сухов Андрей | создано с любовью в LoftSchool | 2016
+        div.footer-copyright-content <span class="mobile-block"> © Сухов Андрей </span> <span class="mobile-hidden">|</span> создано с любовью в LoftSchool | 2016

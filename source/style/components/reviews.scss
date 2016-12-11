@@ -44,3 +44,28 @@
   font-weight: 700;
   margin-bottom: 5px;
 }
+
+@media (max-width: $tabletDimension) {
+  .reviews-list-item {
+    flex-basis: 325px;
+  }
+}
+
+@media (max-width: $mobileDimension) {
+
+  .reviews-block {
+   width: auto;
+  }
+
+
+  .reviews-block {
+    padding-bottom: 500px;
+  }
+
+  .reviews-list {
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

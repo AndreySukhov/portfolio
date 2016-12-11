@@ -1,9 +1,14 @@
 .main-header {
   text-align: center;
   background: url('/assets/img/main-bg.png') no-repeat center center;
-  background-size: cover;
+  background-size: 1800px 900px;
   min-height: 600px;
   position: relative;
+}
+
+
+.main-header__details {
+  margin-top: 80px;
 }
 
 .main-header__top {
@@ -32,7 +37,45 @@
   z-index: 2;
 }
 
-@media (min-height:$mobileDimension ) {
+
+.parallax {
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  text-align: center;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+
+
+@media (max-width: $mobileDimension ) {
+  .main-header__top {
+   padding-top: 10px;
+  }
+
+  .main-header {
+    min-height: 550px;
+  }
+}
+
+@media (min-width:$mobileDimension ) {
   .header-page-arrow:hover {
     opacity: 1;
     color: $buttonHoverColor;

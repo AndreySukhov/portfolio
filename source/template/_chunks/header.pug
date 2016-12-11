@@ -5,13 +5,16 @@ header.main-header
             div.burger-ctn
                 a.burger-trigger.js-burger-trigger(href="#")
                     i.fa.fa-bars(aria-hidden='true')
-        div.main-header__details
-            div.rounded-photo
-                img.rounded-photo__img(src="/assets/img/profile.jpg")
-            if headerTitleLarge
-                h1.title.title--white #{headerTitleLarge}
-            if headerTitleText
-                h2.subtitle #{headerTitleText}
-            div.text-regular.text-regular--white.text-regular--no-margin #{headerSubtitleText}
-        div.header-page-arrow
-            i.fa.fa-chevron-down(aria-hidden='true')
+    div.parallax
+        div.parallax__layer.parallax__layer--back
+            div.main-header__details
+                div.rounded-photo
+                    img.rounded-photo__img(src="/assets/img/profile.jpg")
+                if headerTitleLarge
+                    h1.title.title--white #{headerTitleLarge}
+                if headerTitleText
+                    h2.subtitle #{headerTitleText}
+                    div.text-regular.text-regular--white.text-regular--no-margin #{headerSubtitleText}
+        div.parallax__layer.parallax__layer--base
+            div.header-page-arrow
+                i.fa.fa-chevron-down(aria-hidden='true')

@@ -34,6 +34,14 @@
 
 }
 
+@media(max-width: $mobileDimension) {
+  .btn {
+    font-size: 0.87rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 @media(min-width: $mobileDimension) {
   .btn:hover {
     background: $buttonHoverColor;
