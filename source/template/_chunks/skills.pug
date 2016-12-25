@@ -5,6 +5,6 @@ div.skills-list
         div.skills-list-row
             each item in content
                 each title, percent in item
-                    div.skill-pie
-                        div.skill-pie__graphic.js-skill-pie__graphic(data-peity='{ "fill": ["#165ad1", "#dfdcd5"],   "innerRadius": 40, "radius": 60 }') #{percent}/100
+                    div.skill-pie(style={opacity: `${percent/100}`})
+                        div.skill-pie__graphic.js-skill-pie__graphic(data-peity='{ "fill": ["#165ad1", "#dfdcd5"],   "innerRadius": 40, "radius": 60 }' ) #{percent}/100
                         div.skill-pie__text #{title}

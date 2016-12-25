@@ -12,31 +12,67 @@ block content
         div.skew-block.skew-block--left.skew-block--left-dark-transparent
         div.skew-block.skew-block--right.skew-block--right-dark-transparent
         h1.title.title--skew.title--white Мои работы
-    div.half-block-ctn.tablet-reversed.works-modify-block
+    div.half-block-ctn.tablet-reversed.works-modify-block.slider-ctn
         div.main-content__half-block.main-content__half-block--beige
             div.flex-center-block
                 div.work-example-description.centered
-                    h2.title.title--second-level Интернет-магазин деликатесов
-                    div.line-separate
-                    div.work-example-description__used-skills HTML , CSS, JAVASCRIPT
-                    a.btn(href="http://delikateska.ru/", target="_blank") <i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт
+                    div.work-example-description__item(data-item="1")
+                        h2.title.title--second-level Корпоративный сайт
+                        div.line-separate
+                        div.work-example-description__used-skills HTML , CSS, JAVASCRIPT
+                        a.btn(href="http://mosoblgaz.ru/", target="_blank") <i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт
+                    div.work-example-description__item.work-example-description__item--active(data-item="2")
+                        h2.title.title--second-level Интернет-магазин деликатесов
+                        div.line-separate
+                        div.work-example-description__used-skills HTML , CSS, JAVASCRIPT
+                        a.btn(href="http://delikateska.ru/", target="_blank") <i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт
+                    div.work-example-description__item(data-item="3")
+                        h2.title.title--second-level Магазин здорового питания
+                        div.line-separate
+                        div.work-example-description__used-skills HTML , CSS, JAVASCRIPT
+                        a.btn(href="http://www.seryogina.ru/", target="_blank") <i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт
+                    div.work-example-description__item(data-item="4")
+                        h2.title.title--second-level Магазин продуктов питания
+                        div.line-separate
+                        div.work-example-description__used-skills HTML , CSS, JAVASCRIPT
+                        a.btn(href="http://xn----btbqcbbcb.xn--p1ai/", target="_blank") <i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт
         div.main-content__half-block.main-content__half-block--creme
             div.current-work-holder
-                div.current-work
-                    img(src="/assets/img/work-img.png")
+                div.current-work(data-item="1")
+                    img(src="./assets/img/work-img-2.png")
+                div.current-work.current-work--active(data-item="2")
+                    img(src="./assets/img/work-img.png")
+                div.current-work(data-item="3")
+                    img(src="./assets/img/work-img-3.png")
+                div.current-work(data-item="4")
+                    img(src="./assets/img/work-img-4.png")
             div.works-toggle-ctn
                 div.works-toggle-ctn-item
                     a.work-toggle-btn.work-toggle-btn--prev(href="#")
-                    div.work-img-holder
-                        img.work-img(src="/assets/img/work-img-2.png")
-                    div.work-arrow-ctn
-                        i.fa.fa-chevron-down(aria-hidden="true")
+                        div.work-arrow-ctn
+                            i.fa.fa-chevron-down(aria-hidden="true")
+                    div.work-img-holder-ctn.work-img-holder-ctn--prev
+                        div.work-img-holder.work-img-holder--current(data-item="1")
+                            img(src="./assets/img/work-img-2.png")
+                        div.work-img-holder(data-item="2")
+                            img(src="./assets/img/work-img.png")
+                        div.work-img-holder(data-item="3")
+                            img(src="./assets/img/work-img-3.png")
+                        div.work-img-holder(data-item="4")
+                            img(src="./assets/img/work-img-4.png")
                 div.works-toggle-ctn-item
                     a.work-toggle-btn.work-toggle-btn--next(href="#")
-                    div.work-img-holder
-                        img.work-img(src="/assets/img/work-img-3.png")
-                    div.work-arrow-ctn
-                        i.fa.fa-chevron-up(aria-hidden="true")
+                        div.work-arrow-ctn
+                            i.fa.fa-chevron-up(aria-hidden="true")
+                    div.work-img-holder-ctn.work-img-holder-ctn--next
+                        div.work-img-holder(data-item="2")
+                            img(src="./assets/img/work-img.png")
+                        div.work-img-holder(data-item="1")
+                            img(src="./assets/img/work-img-2.png")
+                        div.work-img-holder.work-img-holder--current(data-item="3")
+                            img.work-img(src="./assets/img/work-img-3.png")
+                        div.work-img-holder(data-item="4")
+                            img(src="./assets/img/work-img-4.png")
     div.full-block-ctn.reviews-block-ctn
         div.site-fixer
             div.reviews-block.centered
@@ -44,7 +80,7 @@ block content
                 div.reviews-list
                     div.reviews-list-item
                         div.reviews-list-item__img-ctn
-                            img.reviews-list-item__img(src='/assets/img/review-img.jpg')
+                            img.reviews-list-item__img(src='./assets/img/review-img.jpg')
                         div.reviews-list-item__text Этот парень проходил обучение веб-разработке не где-то, а в
                             | LoftSchool! 2 месяца только самых тяжелых испытаний
                             | и бессонных ночей!
@@ -52,7 +88,7 @@ block content
                         div.reviews-list-item__status — основатель Loftschool
                     div.reviews-list-item
                         div.reviews-list-item__img-ctn
-                            img.reviews-list-item__img(src='/assets/img/review-img-1.jpg')
+                            img.reviews-list-item__img(src='./assets/img/review-img-1.jpg')
                         div.reviews-list-item__text Этот код выдержет любые испытания. Только пожалуйста, не
                             | загружается сайт на слишком старых браузерах!
                         div.reviews-list-item__author Зар Захаров
@@ -60,13 +96,17 @@ block content
                 div.contacts-form-ctn.js-form-ctn
                     h2.title.title--second-level.title--white Связаться со мной
                     div.line-separate
-                    form.contacts-form
+                    form.contacts-form#js-contacts-form
                         div.input-item
-                            input(type="text", class="input js-focus-input", placeholder="Ваше Имя")
+                            input(type="text", class="input js-focus-input", placeholder="Ваше Имя" required value="")
+                            span.input-error-text
                         div.input-item
-                            input(type="email", class="input js-focus-input", placeholder="Ваш email")
+                            input(type="email", class="input js-focus-input", placeholder="Ваш email" required value="")
+                            span.input-error-text
                         div.input-item
-                            textarea(class="textarea js-focus-input", placeholder="Ваше сообщение")
+                            textarea(class="textarea js-focus-input", placeholder="Ваше сообщение" required value="")
+                        div.form-result-text
+                            span.input-error-text
                         div.form-actions
                             div.form-actions__item
                                 input(type="submit", value="Отправить", class="btn btn--fw")

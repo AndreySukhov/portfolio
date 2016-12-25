@@ -1,5 +1,13 @@
+@mixin chooseInputDefaults() {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 1px solid $buttonInitialColor;
+  margin-right: 10px;
+}
+
 .greeting-bg {
-  background: url('/assets/img/main-bg.png') no-repeat center center;
+  background: url('../img/main-bg.jpg') no-repeat center center;
   background-size: cover;
   min-height: 100vh;
 
@@ -21,7 +29,14 @@
   position: absolute;
   top: 25px;
   right: 0;
+
+  .btn.hidden {
+    display: none;
+  }
 }
+
+
+
 
 .greeting-block {
   width: 380px;
@@ -41,11 +56,169 @@
     border-right: 2px solid rgba(#dee3e7, 0.5);
     border-left: 2px solid rgba(#dee3e7, 0.5);
   }
+  .btn:last-of-type {
+    border-right: none;
+  }
 }
+
+
+.authorise-input-item {
+  margin-bottom: 20px;
+}
+
+.authorise-input {
+  background: #fff;
+  color: #373e42;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: calc(100% - 45px);
+}
+
+.authorise-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #373e42;
+}
+.authorise-input::-moz-placeholder { /* Firefox 19+ */
+  color: #373e42;
+}
+.authorise-input:-ms-input-placeholder { /* IE 10+ */
+  color: #373e42;
+}
+.authorise-input:-moz-placeholder { /* Firefox 18- */
+  color: #373e42;
+}
+
+.authorise-input-item {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.authorise-icon {
+  width: 45px;
+  background: #f0efe9;
+  color: #c4cbcd;
+  line-height: 45px;
+}
+
+.authorise-capcha {
+  width: 100%;
+  text-align: center;
+}
+
+.authorise-capcha-item {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.authoriase-choose-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-faker, .authorize-text, .radio-faker {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox-faker {
+
+  @include chooseInputDefaults();
+  border-radius: 4px;
+
+  transition: background $transitionTime ease-out;
+
+
+  .checkbox-mark {
+    opacity: 0;
+    transition: opacity $transitionTime ease-out;
+  }
+
+}
+
+
+.radio-faker {
+  @include chooseInputDefaults();
+    border-radius: 100%;
+    position: relative;
+ }
+
+.input-checkbox:checked + .checkbox-faker {
+  background: $buttonInitialColor;
+
+  .checkbox-mark {
+    opacity: 1;
+  }
+}
+
+
+.radio-faker-inner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: $buttonInitialColor;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+  opacity: 0;
+  transition: opacity $transitionTime ease-out;
+}
+
+.input-radio:checked + .radio-faker {
+  .radio-faker-inner {
+    opacity: 1;
+  }
+}
+
 
 .greeting-copyright {
   text-align: center;
 }
+
+
+
+.flip-ctn {
+  perspective: 1000px;
+  height: 360px;
+}
+
+.flip-ctn.flipped {
+  .flipper {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-ctn, .flip-item--front, .flip-item--back {
+  width: 380px;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+.flip-item--front, .flip-item--back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flip-item--front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.flip-item--back {
+  transform: rotateY(180deg);
+}
+
 
 @media (max-width: 900px) {
   .greeting-block {

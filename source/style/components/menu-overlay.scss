@@ -1,0 +1,61 @@
+body.fixed, html.fixed {
+  overflow: hidden;
+  position: fixed;
+}
+
+.menu-overlay-ctn.visible {
+  display: block;
+  position: fixed;
+  background: rgba($mainBlue, 0.87);
+  left: 0;
+  right: 0;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+
+.menu-overlay-ctn {
+  display: none;
+}
+
+.menu-overlay {
+
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
+
+}
+
+.menu-overlay-content {
+  text-align: center;
+  margin: 20px;
+}
+
+.line-separate--white {
+  background: #fff;
+  opacity: 1;
+}
+
+.menu-overlay__item {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 25px;
+
+  .line-separate {
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity $transitionTime ease-out;
+  }
+}
+
+@media (min-width: $mobileDimension) {
+  .menu-overlay__item:hover {
+    color: #ababab;
+
+    .line-separate {
+      opacity: 1;
+    }
+  }
+}

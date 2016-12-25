@@ -1,6 +1,6 @@
 .main-header {
   text-align: center;
-  background: url('/assets/img/main-bg.png') no-repeat center center;
+  background: url('../img/main-bg.jpg') no-repeat center center;
   background-size: 1800px 900px;
   min-height: 600px;
   position: relative;
@@ -20,6 +20,59 @@
 
 .burger-ctn {
   color: #fff;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+}
+
+.burger-trigger {
+  color: #fff;
+  font-size: 40px;
+  transition: color ease-out $transitionTime;
+  text-decoration: none;
+}
+
+
+.burger-trigger.open-started {
+  .burger-icon {
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+.burger-trigger.open-finished {
+  .burger-icon {
+    display: none;
+  }
+
+  .header-cross {
+    transform: rotate(360deg) scale(1);
+  }
+
+}
+
+.burger-trigger.close-started {
+  .header-cross {
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+
+.burger-trigger.close-finished {
+  .burger-icon {
+    display: block;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+
+.burger-icon, .header-cross {
+  transition: transform 0.3s ease-out;
+  top: 0;
+  position: absolute;
+  width: 40px;
+  text-align: center;
 }
 
 .header-page-arrow {
@@ -47,6 +100,10 @@
   text-align: center;
 }
 
+.parallax::-webkit-scrollbar {
+  display: none;
+}
+
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -63,7 +120,11 @@
   transform: translateZ(-1px) scale(2);
 }
 
-
+.header-cross {
+  text-decoration: none;
+  outline: none !important;
+  transform: scale(0);
+}
 
 @media (max-width: $mobileDimension ) {
   .main-header__top {
@@ -81,4 +142,9 @@
     color: $buttonHoverColor;
     transform: translateY(-2px);
   }
+
+  .burger-trigger:hover {
+    color: #ababab;
+  }
+
 }

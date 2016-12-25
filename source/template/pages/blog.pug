@@ -15,7 +15,7 @@ block content
                 div.blog-side-content
                     include ../_chunks/vertical-nav.pug
                 div.blog-main-content
-                    div.blog-content__item
+                    div.blog-content__item(data-item="blog-item-1")
                         h2.title.title--second-level Самое важное в SASS
                         div.date 22 ноября 2016
                         div.text-block.text-block--blog-modify
@@ -31,8 +31,8 @@ block content
                               |Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки
                               |и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой
                               |процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-                            img(src="/assets/img/code-snippet.png")
-                    div.blog-content__item
+                            img(src="./assets/img/code-snippet.png")
+                    div.blog-content__item(data-item="blog-item-2")
                         h2.title.title--second-level Приёмы в вёрстке, без которых не обходится ни один сайт
                         div.date 13 ноября 2016
                         div.text-block.text-block--blog-modify
@@ -49,3 +49,31 @@ block content
                               |и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой
                               |процесс внедрения и модернизации системы обучения кадров, соответствует насущным
                               |потребностям.
+
+                    div.blog-content__item(data-item="blog-item-3")
+                        h2.title.title--second-level Alternatives to Placeholder Text
+                        div.date 5 ноября 2016
+                        div.text-block.text-block--blog-modify
+                            p Which amounts to pretty much: "Don't use them". Notice there are no examples of good use
+                            |cases, and even the examples in the "Do" graphics just say "Placeholder Text", which isn't
+                            |exactly demonstrative of usefulness.
+                            p I wonder if placeholder text will fall completely out of favor.
+                            p It reminds me of float labels. Float labels were a fun little fling, but they aren't
+                            |actually useful. The reason you'd reach for them is when you're so space-limited that
+                            |you can't show a regular label beside the input. But you can't actually ever remove the
+                            | label, just move it. So if the label is still there and readable, why not just leave
+                            | it there the whole time?
+                    div.blog-content__item(data-item="blog-item-4")
+                        h2.title.title--second-level @supports изменит вашу жизнь
+                        div.date 1 ноября 2016
+                        div.text-block.text-block--blog-modify
+                            p Благодаря прогрессивному улучшению мы можем использовать много удивительных CSS-свойств,
+                              |даже если не каждый браузер их поддерживает.
+                            p При использовании новых возможностей CSS часто не приходится заботиться о запасном
+                              |варианте — CSS делает это за нас. CSS всепрощающий, он игнорирует строки кода, которые
+                              |не понимает. Так, браузеры просто не будут применять свойство, которое они не
+                              | поддерживают. Давайте рассмотрим это на примере.
+                            p Здорово, но что насчет поддержки @supports браузерами? На момент написания статьи
+                              |его поддерживают 77% браузеров. Поддержки нет в IE и Opera Mini (в Opera Mini уже есть
+                              |— Прим. ред.). Что произойдет, если @supports не поддерживается? Тогда браузер просто
+                              |проигнорирует содержащийся в теле директивы код, что хорошо.

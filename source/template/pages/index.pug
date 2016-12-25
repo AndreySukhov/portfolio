@@ -9,17 +9,54 @@ block content
     div.site-fixer
         div.greeting-ctn
             div.greeting-authorise-ctn
-                a.btn.btn--transparent авторизоваться
-            div.greeting-block
-                div.greeting-block__content
-                    div.rounded-photo
-                        img.rounded-photo__img(src="/assets/img/profile.jpg")
-                    div.title-ctn
-                        h2.subtitle Сухов Андрей
-                        p.text-regular.text-regular--white Личный сайт веб разработчика
-                    include ../_partials/socials.pug
-                nav.greeting-nav
-                    each link,title in navigation
-                        a.btn.btn--flex(href=`${link}`)=title
+                a.btn.btn--transparent.js-authorise-flip(href="#") авторизоваться
+            div.flip-ctn
+                div.flipper
+                    div.greeting-block.js-flip-item.flip-item--front
+                        div.greeting-block__content
+                            div.rounded-photo
+                                img.rounded-photo__img(src="./assets/img/profile.jpg")
+                            div.title-ctn
+                                h2.subtitle Сухов Андрей
+                                p.text-regular.text-regular--white Личный сайт веб разработчика
+                            include ../_partials/socials.pug
+                        nav.greeting-nav
+                            each link,title in navigation
+                                a.btn.btn--flex(href=`${link}`)=title
+                    div.greeting-block.js-flip-item.flip-item--back
+                        div.greeting-block__content
+                            div.title.title--second-level.title--white Авторизуйтесь
+                            div.authorise-block
+                                div.authorise-input-item
+                                    div.authorise-icon
+                                        i.fa.fa-user(aria-hidden="true")
+                                    input.authorise-input.input(type="text", placeholder='Логин')
+                                div.authorise-input-item
+                                    div.authorise-icon
+                                        i.fa.fa-key(aria-hidden="true")
+                                    input.authorise-input.input(type="password", placeholder='Пароль')
+                                div.authorise-input-item
+                                    div.authorise-capcha
+                                        label.authorise-capcha-item
+                                            input.authoriase-choose.authoriase-choose-input.input-checkbox(type="checkbox" name="capcha" value)
+                                            div.checkbox-faker
+                                                i.checkbox-mark.fa.fa-check(aria-hidden="true")
+                                            span.authorize-text Я человек
+                                div.authorise-input-item
+                                    div.authorise-capcha
+                                        label.authorise-capcha-item
+                                            input.authoriase-choose.authoriase-choose-input.input-radio(type="radio" name="capcha-radio" value="1")
+                                            div.radio-faker
+                                                div.radio-faker-inner
+                                            span.authorize-text Да
+                                        label.authorise-capcha-item
+                                            input.authoriase-choose.authoriase-choose-input.input-radio(type="radio" name="capcha-radio" value="2")
+                                            div.radio-faker
+                                                div.radio-faker-inner
+                                            span.authorize-text Не уверен
+                        nav.greeting-nav
+                                a.btn.btn--flex.js-back-to-greet-link(href="#") На главную
+                                a.btn.btn--flex.js-login-link(href="#") Войти
+
         div.greeting-copyright
             p.text-regular.text-regular--white © Сухов Андрей | создано с любовью в LoftSchool | 2016

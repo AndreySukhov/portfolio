@@ -13,6 +13,14 @@
   width: 400px;
 }
 
+.work-example-description__item {
+  display: none;
+}
+
+.work-example-description__item--active {
+  display: block;
+}
+
 .work-example-description__used-skills {
   font-weight: 500;
   color: $mainBlue;
@@ -27,6 +35,11 @@
 .current-work {
   max-width: 600px;
   margin: 0 auto;
+  display: none;
+}
+
+.current-work--active {
+  display: block;
 }
 
 .works-toggle-ctn {
@@ -36,6 +49,15 @@
 .works-toggle-ctn-item {
   position: relative;
   width: 50%;
+  display: flex;
+  align-items: center;
+  height: 95px;
+  overflow: hidden;
+}
+
+.form-result-text {
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .work-toggle-btn {
@@ -54,6 +76,11 @@
 
 .work-img-holder {
   padding: 2px 60px;
+  display: none;
+}
+
+.work-img-holder--current {
+  display: block;
 }
 
 .work-toggle-btn--next {

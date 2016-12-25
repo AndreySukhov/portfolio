@@ -2,6 +2,20 @@
   text-align: right;
 }
 
+
+.side-nav-list.fixed {
+  position: fixed;
+  top: 20px;
+  width: 260px;
+}
+
+.side-nav-list.bottom-fixed {
+  width: 260px;
+  top: auto;
+  bottom: 65px;
+  position: absolute;
+}
+
 .side-nav-list__item {
   display: block;
   color:#474b57;

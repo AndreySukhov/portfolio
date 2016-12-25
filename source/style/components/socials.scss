@@ -18,11 +18,6 @@
   transition: opacity ease-out $transitionTime , color ease-out $transitionTime;
 }
 
-.burger-trigger {
-  color: #fff;
-  font-size: 40px;
-  transition: color ease-out $transitionTime;
-}
 
 @media (min-width: $mobileDimension) {
   .greeting-block .social__item:hover {
@@ -30,10 +25,6 @@
   }
 
   .social__item:hover {
-    color: $socialBlue;
-  }
-
-  .burger-trigger:hover {
     color: $socialBlue;
   }
 }
