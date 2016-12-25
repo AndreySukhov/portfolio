@@ -8,7 +8,7 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="icon" href="./assets/img/fav_night.ico">
+    <link rel="icon" href="/assets/img/fav_night.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic,cyrillic-ext">
     <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="./assets/css/foundation.css">
@@ -21,19 +21,63 @@
     <div class="main-content">
       <div class="site-fixer">
         <div class="greeting-ctn">
-          <div class="greeting-authorise-ctn"><a class="btn btn--transparent">авторизоваться</a></div>
-          <div class="greeting-block">
-            <div class="greeting-block__content">
-              <div class="rounded-photo"><img class="rounded-photo__img" src="./assets/img/profile.jpg"></div>
-              <div class="title-ctn">
-                <h2 class="subtitle">Сухов Андрей</h2>
-                <p class="text-regular text-regular--white">Личный сайт веб разработчика</p>
+          <div class="greeting-authorise-ctn"><a class="btn btn--transparent js-authorise-flip" href="#">авторизоваться</a></div>
+          <div class="flip-ctn">
+            <div class="flipper">
+              <div class="greeting-block js-flip-item flip-item--front">
+                <div class="greeting-block__content">
+                  <div class="rounded-photo"><img class="rounded-photo__img" src="./assets/img/profile.jpg"></div>
+                  <div class="title-ctn">
+                    <h2 class="subtitle">Сухов Андрей</h2>
+                    <p class="text-regular text-regular--white">Личный сайт веб разработчика</p>
+                  </div>
+                  <div class="socaials-ctn"><a class="social__item" href="https://vk.com/sushkasush"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social__item" href="https://github.com/AndreySukhov"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a class="social__item" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+                <nav class="greeting-nav"><a class="btn btn--flex" href="/works.html">Мои работы</a><a class="btn btn--flex" href="/about.html">Обо мне</a><a class="btn btn--flex" href="/blog.html">Блог</a>
+                </nav>
               </div>
-              <div class="socaials-ctn"><a class="social__item" href="https://vk.com/sushkasush"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social__item" href="https://github.com/AndreySukhov"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a class="social__item" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <div class="greeting-block js-flip-item flip-item--back">
+                <div class="greeting-block__content">
+                  <div class="title title--second-level title--white">Авторизуйтесь</div>
+                  <div class="authorise-block">
+                    <div class="authorise-input-item">
+                      <div class="authorise-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                      <input class="authorise-input input" type="text" placeholder="Логин">
+                    </div>
+                    <div class="authorise-input-item">
+                      <div class="authorise-icon"><i class="fa fa-key" aria-hidden="true"></i></div>
+                      <input class="authorise-input input" type="password" placeholder="Пароль">
+                    </div>
+                    <div class="authorise-input-item">
+                      <div class="authorise-capcha">
+                        <label class="authorise-capcha-item">
+                          <input class="authoriase-choose authoriase-choose-input input-checkbox" type="checkbox" name="capcha" value>
+                          <div class="checkbox-faker"><i class="checkbox-mark fa fa-check" aria-hidden="true"></i></div><span class="authorize-text">Я человек</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="authorise-input-item">
+                      <div class="authorise-capcha">
+                        <label class="authorise-capcha-item">
+                          <input class="authoriase-choose authoriase-choose-input input-radio" type="radio" name="capcha-radio" value="1">
+                          <div class="radio-faker">
+                            <div class="radio-faker-inner"></div>
+                          </div><span class="authorize-text">Да</span>
+                        </label>
+                        <label class="authorise-capcha-item">
+                          <input class="authoriase-choose authoriase-choose-input input-radio" type="radio" name="capcha-radio" value="2">
+                          <div class="radio-faker">
+                            <div class="radio-faker-inner"></div>
+                          </div><span class="authorize-text">Не уверен</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="greeting-nav"><a class="btn btn--flex js-back-to-greet-link" href="#">На главную</a><a class="btn btn--flex js-login-link" href="#">Войти</a></nav>
               </div>
             </div>
-            <nav class="greeting-nav"><a class="btn btn--flex" href="./works.html">Мои работы</a><a class="btn btn--flex" href="./about.html">Обо мне</a><a class="btn btn--flex" href="./blog.html">Блог</a>
-            </nav>
           </div>
         </div>
         <div class="greeting-copyright">

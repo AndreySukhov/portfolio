@@ -8,14 +8,14 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="icon" href="./assets/img/fav_night.ico">
+    <link rel="icon" href="/assets/img/fav_night.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic,cyrillic-ext">
     <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="./assets/css/foundation.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script src="./assets/js/foundation.js" defer></script>
-    <script src="./assets/js/app.js" defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOpaCR_qN2qxXI19h-bGuRtVx7dRwh7jY&callback=initMap"></script><!--[if lt IE 9]>
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOpaCR_qN2qxXI19h-bGuRtVx7dRwh7jY"></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
@@ -24,7 +24,8 @@
         <div class="main-header__top">
           <div class="socaials-ctn"><a class="social__item" href="https://vk.com/sushkasush"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social__item" href="https://github.com/AndreySukhov"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a class="social__item" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </div>
-          <div class="burger-ctn"><a class="burger-trigger js-burger-trigger" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+          <div class="burger-ctn"><a class="burger-trigger js-burger-trigger" href="#"><i class="burger-icon fa fa-bars" aria-hidden="true"></i>
+              <div class="header-cross">×</div></a></div>
         </div>
       </div>
       <div class="parallax">
@@ -48,11 +49,11 @@
         <div class="site-fixer">
           <div class="blog-content">
             <div class="blog-side-content">
-              <div class="side-nav-list"><a class="side-nav-list__item side-nav-list__item--active" href="#" data-target="blog-item-undefined">Самое важное в SASS</a><a class="side-nav-list__item" href="#" data-target="blog-item-undefined">Приемы в верстке, без которых не обходится ни один сайт</a><a class="side-nav-list__item" href="#" data-target="blog-item-undefined">Самый необходимые набор Gulp плагинов</a><a class="side-nav-list__item" href="#" data-target="blog-item-undefined">Почему я выбрал Jade</a>
+              <div class="side-nav-list js-side-nav-list"><a class="side-nav-list__item js-side-nav-list__item side-nav-list__item--active" href="#" data-target="blog-item-1">Самое важное в SASS</a><a class="side-nav-list__item js-side-nav-list__item" href="#" data-target="blog-item-2">Приемы в верстке, без которых не обходится ни один сайт</a><a class="side-nav-list__item js-side-nav-list__item" href="#" data-target="blog-item-3">Alternatives to Placeholder Text</a><a class="side-nav-list__item js-side-nav-list__item" href="#" data-target="blog-item-4">@supports изменит вашу жизнь</a>
               </div>
             </div>
             <div class="blog-main-content">
-              <div class="blog-content__item">
+              <div class="blog-content__item" data-item="blog-item-1">
                 <h2 class="title title--second-level">Самое важное в SASS</h2>
                 <div class="date">22 ноября 2016</div>
                 <div class="text-block text-block--blog-modify">
@@ -72,7 +73,7 @@
                   </p><img src="./assets/img/code-snippet.png">
                 </div>
               </div>
-              <div class="blog-content__item">
+              <div class="blog-content__item" data-item="blog-item-2">
                 <h2 class="title title--second-level">Приёмы в вёрстке, без которых не обходится ни один сайт</h2>
                 <div class="date">13 ноября 2016</div>
                 <div class="text-block text-block--blog-modify">
@@ -93,10 +94,57 @@
                   </p>
                 </div>
               </div>
+              <div class="blog-content__item" data-item="blog-item-3">
+                <h2 class="title title--second-level">Alternatives to Placeholder Text</h2>
+                <div class="date">5 ноября 2016</div>
+                <div class="text-block text-block--blog-modify">
+                  <p>Which amounts to pretty much: "Don't use them". Notice there are no examples of good use</p>
+                  cases, and even the examples in the "Do" graphics just say "Placeholder Text", which isn't
+                  exactly demonstrative of usefulness.
+                  <p>I wonder if placeholder text will fall completely out of favor.</p>
+                  <p>It reminds me of float labels. Float labels were a fun little fling, but they aren't</p>
+                  actually useful. The reason you'd reach for them is when you're so space-limited that
+                  you can't show a regular label beside the input. But you can't actually ever remove the
+                  label, just move it. So if the label is still there and readable, why not just leave
+                  it there the whole time?
+                </div>
+              </div>
+              <div class="blog-content__item" data-item="blog-item-4">
+                <h2 class="title title--second-level">@supports изменит вашу жизнь</h2>
+                <div class="date">1 ноября 2016</div>
+                <div class="text-block text-block--blog-modify">
+                  <p>
+                    Благодаря прогрессивному улучшению мы можем использовать много удивительных CSS-свойств,даже если не каждый браузер их поддерживает.</p>
+                  <p>При использовании новых возможностей CSS часто не приходится заботиться о запасном
+                    варианте — CSS делает это за нас. CSS всепрощающий, он игнорирует строки кода, которые
+                    не понимает. Так, браузеры просто не будут применять свойство, которое они не
+                    поддерживают. Давайте рассмотрим это на примере.
+                  </p>
+                  <p>Здорово, но что насчет поддержки @supports браузерами? На момент написания статьи
+                    его поддерживают 77% браузеров. Поддержки нет в IE и Opera Mini (в Opera Mini уже есть
+                    — Прим. ред.). Что произойдет, если @supports не поддерживается? Тогда браузер просто
+                    проигнорирует содержащийся в теле директивы код, что хорошо.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="menu-overlay-ctn">
+      <div class="menu-overlay">
+        <div class="menu-overlay-content"><a class="title title--white menu-overlay__item" href="/works.html">Мои работы
+            <div class="line-separate line-separate--white"></div></a><a class="title title--white menu-overlay__item" href="about.html">Обо мне
+            <div class="line-separate line-separate--white"></div></a><a class="title title--white menu-overlay__item" href="/blog.html">Блог
+            <div class="line-separate line-separate--white"></div></a><a class="title title--white menu-overlay__item" href="#">Авторизация
+            <div class="line-separate line-separate--white"></div></a>
+        </div>
+      </div>
+    </div>
+    <div class="preload-overlay-ctn">
+      <div class="preload-circle"></div>
+      <div class="preloader-text">0</div>
     </div>
     <footer class="main-footer main-footer--default">
       <div class="footer-top">
@@ -108,7 +156,7 @@
               </div>
             </div>
             <div class="footer-top-block">
-              <nav class="footer-nav"><a class="footer-nav__item" href="./works.html">Мои работы</a><a class="footer-nav__item" href="./about.html">Обо мне</a><a class="footer-nav__item" href="./blog.html">Блог</a><a class="footer-nav__item" href="#">Авторизация</a>
+              <nav class="footer-nav"><a class="footer-nav__item" href="/works.html">Мои работы</a><a class="footer-nav__item" href="about.html">Обо мне</a><a class="footer-nav__item" href="/blog.html">Блог</a><a class="footer-nav__item" href="#">Авторизация</a>
               </nav>
               <div class="footer-socials"></div>
               <div class="socaials-ctn"><a class="social__item" href="https://vk.com/sushkasush"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social__item" href="https://github.com/AndreySukhov"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a class="social__item" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
