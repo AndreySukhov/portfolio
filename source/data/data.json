@@ -5,14 +5,14 @@
     "#": "linkedin"
   },
   "navigation": {
-    "Мои работы": "/works.html",
-    "Обо мне": "/about.html",
-    "Блог": "/blog.html"
+    "Мои работы": "works.html",
+    "Обо мне": "about.html",
+    "Блог": "blog.html"
   },
   "footerNavigation": {
-    "Мои работы": "/works.html",
+    "Мои работы": "works.html",
     "Обо мне": "about.html",
-    "Блог": "/blog.html",
+    "Блог": "blog.html",
     "Авторизация": "#"
   },
   "skillList": {
